@@ -8,7 +8,7 @@ class GestionPromotion {
             $this->Connection = mysqli_connect('localhost', 'superadmin', 'strongpassword', 'crud_db');
         return $this->Connection;
     }
-
+// 
      public function Display(){
          $SQLQ = 'SELECT * FROM classes';
          $query = mysqli_query($this->conn() ,$SQLQ);

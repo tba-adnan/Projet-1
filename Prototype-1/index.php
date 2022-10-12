@@ -1,5 +1,5 @@
 <?php
- include 'GestionPromo.php';
+ include ('BLL/GestionPromo.php');
 ?>
 
 <!DOCTYPE html>
