@@ -1,5 +1,5 @@
 <?php
-require ("./DAL/DBcon.php");
+require ("../DAL/DBcon.php");
 
 // require(dirname(__FILE__) . '/DAL/DBcon.php');
 

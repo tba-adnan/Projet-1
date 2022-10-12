@@ -22,6 +22,12 @@ class PromoBLL{
       return $this->PromoManager->DelData($Promo);
    }
 
+   function EditD($id, $Name){
+
+      return $this->PromoManager->Edit($id, $Name);
+
+   }
+
 }
 
 ?>

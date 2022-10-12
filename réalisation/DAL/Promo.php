@@ -2,7 +2,7 @@
  class Promo {
   
    private $Id;
-    private $Name;
+   private $Name;
 
 public function getId() {
    return $this->Id;
