@@ -10,23 +10,44 @@ $name=$_POST['name'];
 $promoBLL->updateData($id,$name);
 
 header("Location:index.php");
-
 }
-
-
 ?>
 
-<div class="container cadre">
-	<div class=" text-center">
-<form class="form-inline justify-content-center form" method="POST">
-   <h1 class="title">Modifier promotion</h1>
-   <div class="form-group mx-sm-3 mb-2 input">
-      <label for="input" class="sr-only">Name poromotion</label>
-      <input type="hidden" value=<?php echo $Data->getId()?> name="id">
-      Nom de la poromotion <input type="text" value=<?php echo $Data->getName()?> name="name">
-      <button class=" btn btn-info  ">Envoyer</button>
-   </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
 
-</div>
-</div>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <title>Modifer le Nom :</title>
+</head>
+
+
+<body>
+   <div class="container-fluid">
+      <br>
+      <h1 class="display-5">Modifier le Nom du Promotion : </h1>
+      <hr>
+   </div>
+
+   <div class="container-fluid">
+      <div class="input-group mb-3 container-fluid">
+         <form class="form-inline justify-content-center form" method="POST">
+            <br>
+            <div>
+               <label for="input" class="lead">Renomé la Promotion : </label>
+               <br>
+               <input class="input-group-text" type="hidden" value=<?php echo $Data->getId()?> name="id">
+               <input class="input-group-text" type="text" value=<?php echo $Data->getName()?> name="name">
+               <br>
+               <button class="btn btn-success">Envoyer</button>
+            </div>
+         </form>
+      </div>
+
+</body>
+
+</html>

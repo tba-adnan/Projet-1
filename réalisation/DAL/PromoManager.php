@@ -34,13 +34,13 @@ public function DelData($id){
     mysqli_query(Conn(), $DeleteRow);
    }
 
-   public function updateData($id){
+   public function Update($id){
     $DeleteRow="DELETE  FROM classes where id = $id"; 
     mysqli_query(Conn(), $DeleteRow);
    }
 
 
-   function Edit($id, $Name){
+   function Edit($id){
     $SelectRowId = "SELECT * FROM classes WHERE id=$id";
     $Query = mysqli_query(Conn(),$SelectRowId);
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);

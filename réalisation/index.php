@@ -17,6 +17,7 @@
 	<nav class="navbar navbar-light bg-light">
 		<span class="navbar-brand d-grid gap-3 mx-auto display-2 container-fluid"> Gestion du Promotion :
 		</span>
+		
 	</nav>
 	<br>
 	<!--  -->
@@ -55,4 +56,14 @@ include "BLL/PromoBLL.php";
 			<a href="search.html" class="btn btn-secondary">Chercher</a>
 		</div>
 	</div>
-</body>
+
+<?php
+include ('BLL/PromoBLL.php');
+$PromoManager = new PromoBLL();
+if(!empty($_POST)){
+    $Promo = new Promo();
+	$Promo->setName($_POST['Name']);
+    $GetData =  $PromoManager->AddData($Promo);
+	header("Location: index.php");
+}
+?>

@@ -1,35 +1,30 @@
 <?php
-require ("../DAL/DBcon.php");
-
-// require(dirname(__FILE__) . '/DAL/DBcon.php');
-
-
-
+require ("./DAL/DBcon.php");
 $return = '';
 if(isset($_POST["query"]))
 {
-	$search = mysqli_real_escape_string(Conn(), $_POST["query"]);
-	$query = "SELECT * FROM classes
-	WHERE name  LIKE '%".$search."%'";}
-else
-{
-	$query = "SELECT * FROM classes";
-}
-$result = mysqli_query(Conn(), $query);
+
+	$search = $_POST['query'];
+    $query = "SELECT * FROM classes WHERE name LIKE '{$search}%' OR id LIKE '{$search}%'";
+    $result= mysqli_query(Conn(),$query);
+	}
+
+
 if(mysqli_num_rows($result) > 0)
 {
 	$return .='
 	<div class="table-responsive">
-	<table class="table table bordered table table-striped table-dark lead">
+	<table class="table table-striped">
 	<tr>
-		<th>ID : </th>
 		<th>Promotion : </th>
 	</tr>';
 	while($row1 = mysqli_fetch_array($result))
 	{
-		$return .= '
+		$return = '
+		<div class="table-responsive">
+	    <table class="table table-striped">
+		<br>
 		<tr>
-		<td>'.$row1["id"].'</td>
 		<td>'.$row1["name"].'</td>
 		</tr>';
 	}
@@ -37,6 +32,7 @@ if(mysqli_num_rows($result) > 0)
 	}
 else
 {
-	echo 'No results containing all your search terms were found.';
+	echo '<br>';
+	echo '<p class="lead"> Aucun résultat contenant tous vos termes de recherche a été trouvé. </p>';
 }
 ?>

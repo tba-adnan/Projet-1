@@ -18,13 +18,13 @@ class PromoBLL{
       return $this->PromoManager->DelData($Promo);
    }
 
-   function updateData($Promo){
-      return $this->PromoManager->DelData($Promo);
+   function EditD($Promo){
+      return $this->PromoManager->Edit($Promo);
    }
 
-   function EditD($id, $Name){
+   function updateData($id, $Name){
 
-      return $this->PromoManager->Edit($id, $Name);
+      return $this->PromoManager->update($id, $Name);
 
    }
 
