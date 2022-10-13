@@ -30,11 +30,7 @@ if(!empty($_POST)){
             <input class="input-group-text" type="text" name="Name">
             <br>
             <button class="btn btn-success">Ajouter</button>
-        </form>
-
-
-
-
+</form>
     </div>
 
 
