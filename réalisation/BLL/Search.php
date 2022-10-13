@@ -20,10 +20,10 @@ if(mysqli_num_rows($result) > 0)
 {
 	$return .='
 	<div class="table-responsive">
-	<table class="table table bordered">
+	<table class="table table bordered table table-striped table-dark lead">
 	<tr>
-		<th>id : </th>
-		<th>Promotion</th>
+		<th>ID : </th>
+		<th>Promotion : </th>
 	</tr>';
 	while($row1 = mysqli_fetch_array($result))
 	{

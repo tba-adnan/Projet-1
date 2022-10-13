@@ -9,26 +9,27 @@
 		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="assets/ajax.js"></script>
-	<title>Document</title>
+	<title>Gestion Promotion : </title>
 </head>
 
 <body>
 	<!--  -->
-<nav class="navbar navbar-light bg-light">
-  <span class="navbar-brand mb-0 h1"> Gestion du Promotion : </span>
-</nav>
+	<nav class="navbar navbar-light bg-light">
+		<span class="navbar-brand d-grid gap-3 mx-auto display-2 container-fluid"> Gestion du Promotion :
+		</span>
+	</nav>
 	<br>
 	<!--  -->
 	<?php 
 include "BLL/PromoBLL.php";
 ?>
-	<div lass="position-absolute top-50 start-50 translate-middle">
-		<table class="table table-sm">
-			<thead>
+	<div class="">
+		<table class="table table-striped table-dark">
+			<thead class="thead-dark">
 				<tr>
-					<th scope="col">Id : </th>
-					<th scope="col">Nom du promo : </th>
-				</tr>
+					<th scope="col" class="lead">ID : </th>
+					<th scope="col" class="lead">Nom du promo : </th>
+					<th scope="col" class="lead">Action : </th>
 			</thead>
 			<tbody>
 				<tr>
@@ -49,6 +50,9 @@ include "BLL/PromoBLL.php";
 			</tbody>
 		</table>
 		<br>
-		<a href="add.php" class="btn btn-success">Ajouter</a>
-		<a href="search.html" class="btn btn-info">Chercher</a>
+		<div class="container-fluid">
+			<a href="add.php" class="btn btn-success">Ajouter</a>
+			<a href="search.html" class="btn btn-secondary">Chercher</a>
+		</div>
 	</div>
+</body>
