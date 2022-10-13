@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-card {
+    margin-top: 150px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+
+
