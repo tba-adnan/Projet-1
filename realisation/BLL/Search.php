@@ -1,5 +1,5 @@
 <?php
-require ("./DAL/DBcon.php");
+require ("../DAL/DBcon.php");
 $return = '';
 if(isset($_POST["query"]))
 {

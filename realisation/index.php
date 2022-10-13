@@ -22,7 +22,7 @@
 	<br>
 	<!--  -->
 	<?php 
-include "BLL/PromoBLL.php";
+include "BLL/PromotionBLL.php";
 ?>
 	<div class="">
 		<table class="table table-striped table-dark">
@@ -35,7 +35,7 @@ include "BLL/PromoBLL.php";
 			<tbody>
 				<tr>
 					<?php 
-        $PromoManager = new PromoBLL();
+        $PromoManager = new PromotionBLL();
         $GetData =  $PromoManager->GetAllData();
         foreach($GetData as $value){
         ?>
@@ -58,7 +58,7 @@ include "BLL/PromoBLL.php";
 	</div>
 
 <?php
-include ('BLL/PromoBLL.php');
+include ('BLL/PromotionBLL.php');
 $PromoManager = new PromoBLL();
 if(!empty($_POST)){
     $Promo = new Promo();

@@ -14,7 +14,7 @@
 include ('BLL/PromoBLL.php');
 $PromoManager = new PromoBLL();
 if(!empty($_POST)){
-    $Promo = new Promo();
+    $Promo = new Promotion();
 	$Promo->setName($_POST['Name']);
     $GetData =  $PromoManager->AddData($Promo);
 	header("Location: index.php");
