@@ -1,6 +1,6 @@
 <?php
-include ('BLL/PromoBLL.php');
-$PromoManager = new PromoBLL();
+include ('BLL/PromotionBLL.php');
+$PromoManager = new PromotionBLL();
 if(!empty($_POST)){
     $Promo = new Promo();
 	$Promo->setName($_POST['Name']);

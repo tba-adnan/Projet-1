@@ -1,11 +1,11 @@
 <?php
 
-include ("DAL/PromoManager.php");
-class PromoBLL{
+include ("DAL/PromotionManager.php");
+class PromotionBLL{
     private $PromoManager = null ;
     public  function __construct()
     {
-       $this->PromoManager = new PromoManager();
+       $this->PromoManager = new PromotionManager();
     }
     function GetAllData(){
        return $this->PromoManager->GetData();

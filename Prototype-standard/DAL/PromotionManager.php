@@ -1,9 +1,9 @@
 <?php 
 
-include ('Promo.php');
+include ('Promotion.php');
 include ('DBcon.php');
 
-class PromoManager {
+class PromotionManager {
 
 public function GetData(){
 
