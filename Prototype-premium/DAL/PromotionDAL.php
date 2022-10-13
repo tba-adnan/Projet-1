@@ -3,7 +3,7 @@
 include ('Promotion.php');
 include ('DBcon.php');
 
-class PromotionManager {
+class PromotionDAL {
 
 public function GetData(){
 
@@ -12,7 +12,7 @@ public function GetData(){
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
     $array= array();
     foreach ($GetData as $value){
-    $promo = new Promo();
+    $promo = new Promotion();
     $promo->SetId($value['id']);
     $promo->SetName($value['name']);
     array_push($array,$promo);
@@ -39,9 +39,6 @@ public function DelData($id){
     mysqli_query(Conn(), $DeleteRow);
    }
 
-
-
-   
 }
 
 ?>

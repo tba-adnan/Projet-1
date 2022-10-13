@@ -1,11 +1,10 @@
 <?php
-
-include ("DAL/PromotionManager.php");
+include ("DAL/PromotionDAL.php");
 class PromotionBLL{
     private $PromoManager = null ;
     public  function __construct()
     {
-       $this->PromoManager = new PromotionManager();
+       $this->PromoManager = new PromotionDAL();
     }
     function GetAllData(){
        return $this->PromoManager->GetData();
@@ -21,7 +20,5 @@ class PromotionBLL{
    function updateData($Promo){
       return $this->PromoManager->DelData($Promo);
    }
-
 }
-
 ?>

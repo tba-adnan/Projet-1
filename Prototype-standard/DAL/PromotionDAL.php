@@ -3,7 +3,7 @@
 include ('Promotion.php');
 include ('DBcon.php');
 
-class PromotionManager {
+class PromotionDAL {
 
 public function GetData(){
 
@@ -39,6 +39,9 @@ public function DelData($id){
     mysqli_query(Conn(), $DeleteRow);
    }
 
+
+
+   
 }
 
 ?>
