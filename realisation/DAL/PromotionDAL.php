@@ -2,11 +2,10 @@
 
 include ('Promotion.php');
 include ('DBcon.php');
+class PromotionDAL {
 
-class PromotionManager {
-
+// Display
 public function GetData(){
-
     $selectRow = "SELECT * from classes";
     $Query = mysqli_query(Conn(),$selectRow);
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
@@ -16,11 +15,11 @@ public function GetData(){
     $promo->SetId($value['id']);
     $promo->SetName($value['name']);
     array_push($array,$promo);
-    }
-    
+    } 
     return $array ;
 }
 
+// Add
 public function AddData($Promo){
  $Name =$Promo->getName();
  $InsertRow="INSERT INTO classes(name) 
@@ -28,18 +27,19 @@ public function AddData($Promo){
  mysqli_query(Conn(), $InsertRow);
 }
 
-
+// Delete
 public function DelData($id){
     $DeleteRow="DELETE  FROM classes where id = $id"; 
     mysqli_query(Conn(), $DeleteRow);
    }
 
+// Update
    public function Update($id){
     $DeleteRow="DELETE  FROM classes where id = $id"; 
     mysqli_query(Conn(), $DeleteRow);
    }
 
-
+//  Edit
    function Edit($id){
     $SelectRowId = "SELECT * FROM classes WHERE id=$id";
     $Query = mysqli_query(Conn(),$SelectRowId);
@@ -48,14 +48,8 @@ public function DelData($id){
     $promo = new Promotion();
     $promo->SetId($value['id']);
     $promo->SetName($value['name']);
-   
     }
-    
     return $promo ;
 }
-
-
-
 }
-
 ?>

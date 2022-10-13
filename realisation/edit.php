@@ -1,6 +1,6 @@
 <?php
-include ("BLL/PromoBLL.php");
-$promoBLL = new PromoBLL();
+include ("BLL/PromotionBLL.php");
+$promoBLL = new PromotionBLL();
 if(isset($_GET['id'])){
    $Data = $promoBLL->EditD($_GET['id']);
 }

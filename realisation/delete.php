@@ -1,7 +1,7 @@
 <?php
-include ("BLL/PromoBLL.php");
+include ("BLL/PromotionBLL.php");
 
-$delPromoBLL = new PromoBLL();
+$delPromoBLL = new PromotionBLL();
 if(isset($_GET["id"])){
    $id = $_GET["id"];
    $delPromoBLL->DelData($id);

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +10,14 @@
 
 <body>
     <?php
-include ('BLL/PromoBLL.php');
-$PromoManager = new PromoBLL();
+include ('BLL/PromotionBLL.php');
+$PromoManager = new PromotionBLL();
 if(!empty($_POST)){
     $Promo = new Promotion();
 	$Promo->setName($_POST['Name']);
     $GetData =  $PromoManager->AddData($Promo);
 	header("Location: index.php");
 }
-
 ?>
 
     <h1 class="display-3 container-fluid">Ajouter une Promotion : </h1>
