@@ -1,5 +1,5 @@
 <?php 
- class Promo {
+ class Promotion {
   
    private $Id;
     private $Name;

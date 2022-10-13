@@ -1,5 +1,4 @@
 <?php
-
 include ("DAL/PromotionManager.php");
 class PromotionBLL{
     private $PromoManager = null ;
@@ -23,5 +22,4 @@ class PromotionBLL{
    }
 
 }
-
 ?>
