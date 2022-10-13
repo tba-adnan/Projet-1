@@ -1,9 +1,9 @@
 <?php 
 
-include ('Promo.php');
+include ('Promotion.php');
 include ('DBcon.php');
 
-class PromoManager {
+class PromotionManager {
 
 public function GetData(){
 
@@ -12,7 +12,7 @@ public function GetData(){
     $GetData = mysqli_fetch_all($Query,MYSQLI_ASSOC);
     $array= array();
     foreach ($GetData as $value){
-    $promo = new Promo();
+    $promo = new Promotion();
     $promo->SetId($value['id']);
     $promo->SetName($value['name']);
     array_push($array,$promo);

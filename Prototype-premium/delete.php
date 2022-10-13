@@ -1,5 +1,5 @@
 <?php
-include ("BLL/PromoBLL.php");
+include ("BLL/PromotionBLL.php");
 
 $delPromoBLL = new PromoBLL();
 if(isset($_GET["id"])){

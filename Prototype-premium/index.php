@@ -1,5 +1,5 @@
 <?php 
-include "BLL/PromoBLL.php";
+include "BLL/PromotionBLL.php";
 ?>
 
 <table class="table">
@@ -12,7 +12,7 @@ include "BLL/PromoBLL.php";
   <tbody>
     <tr>
         <?php 
-        $PromoManager = new PromoBLL();
+        $PromoManager = new PromotionBLL();
         $GetData =  $PromoManager->GetAllData();
         // 
         foreach($GetData as $value){

@@ -1,8 +1,8 @@
 <?php 
- class Promo {
+ class Promotion {
   
    private $Id;
-    private $Name;
+   private $Name;
 
 public function getId() {
    return $this->Id;

@@ -1,5 +1,5 @@
 <?php
-include ('BLL/PromoBLL.php');
+include ('BLL/PromotionBLL.php');
 $PromoManager = new PromoBLL();
 if(!empty($_POST)){
     $Promo = new Promo();
