@@ -40,7 +40,7 @@ header("Location:index.php");
                <input class="input-group-text" type="hidden" value=<?php echo $Data->getId()?> name="id">
                <input class="input-group-text" type="text" value=<?php echo $Data->getName()?> name="name">
                <br>
-               <button class="btn btn-success">Envoyer</button>
+               <button class="btn btn-success">Modifer</button>
             </div>
          </form>
       </div>

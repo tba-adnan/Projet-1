@@ -4,8 +4,7 @@ $return = '';
 if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string(Conn(), $_POST["query"]);
-	$query = "SELECT * FROM classes
-	WHERE name  LIKE '%".$search."%'";}
+	$query = "SELECT * FROM classes WHERE name  LIKE '%".$search."%'";}
 else
 {
 	$query = "SELECT * FROM classes";
@@ -33,6 +32,6 @@ if(mysqli_num_rows($result) > 0)
 	}
 else
 {
-	echo 'No results containing all your search terms were found.';
+	echo "Aucun résultat contenant tous les termes de votre recherche n'a été trouvé ";
 }
 ?>

@@ -34,9 +34,11 @@ public function DelData($id){
    }
 
 // Update
-   public function Update($id){
-    $DeleteRow="DELETE  FROM classes where id = $id"; 
-    mysqli_query(Conn(), $DeleteRow);
+   public function Update($id,$name){
+    $UpdateRow="UPDATE classes SET 
+    `name` = '$name' 
+     where id = $id"; 
+    mysqli_query(Conn(), $UpdateRow);
    }
 
 //  Edit

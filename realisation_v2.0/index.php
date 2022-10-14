@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +12,29 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/bootstrap-icons.svg" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-<style>
 	</script>
 
 <body>
-	<!--  -->
-	<nav class="navbar navbar-light bg-light">
-		<span class="navbar-brand d-grid gap-3 mx-auto display-3 container-fluid"> Gestion du Promotion :
-		</span>
 
-	</nav>
-	<br>
-	<!--  -->
-	<?php 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Gestion des Promotions : </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+	  <form class="container-fluid justify-content-start">
+    <a class="btn btn-outline-success me-2" type="button" href="/add.php">Ajouter</a>
+    <a class="btn btn-sm btn-outline-secondary" type="button" href="/search.html">Chercher</a>
+  </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<?php 
 include "BLL/PromotionBLL.php";
 ?>
 	<div class="">
@@ -55,10 +64,7 @@ include "BLL/PromotionBLL.php";
 			</tbody>
 		</table>
 		<br>
-		<div class="container-fluid">
-			<a href="add.php" class="btn btn-success bi bi-plus-circle-fill">Ajouter</a>
-			<a href="search.html" class="btn btn-secondary">Chercher</a>
-		</div>
+	
 	</div>
 
 	<?php
@@ -89,3 +95,5 @@ if(!empty($_POST)){
 <br>
  <button class="btn btn-success">Ajouter</button>
 </form>
+
+
