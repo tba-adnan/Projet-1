@@ -24,15 +24,12 @@ header("Location:index.php");
       <link rel="stylesheet" href="assets/css/add-edit.css">
    <title>Modifer le Nom :</title>
 </head>
-
-
 <body>
    <div class="container-fluid">
       <!-- <br>
       <h1 class="display-5 center">Modifier le Nom du Promotion : </h1>
       <hr> -->
    </div>
-
    <div class="container-fluid primary-card">
       <div class="input-group mb-3 container-fluid input-group mb-3 container col d-flex align-middle card shadow-lg p-3 mb-5 bg-body rounded" style="width: 25rem;">
          <form class="form-inline justify-content-center form" method="POST">
@@ -47,7 +44,5 @@ header("Location:index.php");
             </div>
          </form>
       </div>
-
 </body>
-
 </html>

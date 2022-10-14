@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/add.css">
+    <link rel="stylesheet" href="assets/css/add-edit.css">
     <title>Gestion Promo : </title>
 </head>
 
 <body>
-    <?php
+<?php
 include ('BLL/PromotionBLL.php');
 $PromoManager = new PromotionBLL();
 if(!empty($_POST)){
@@ -21,7 +21,6 @@ if(!empty($_POST)){
 	header("Location: index.php");
 }
 ?>
-
 <br>
 <div class="primary-card" style="width:800px; margin:0 auto;">
     <div class="input-group mb-3 container col d-flex align-middle card shadow-lg p-3 mb-5 bg-body rounded " style="width: 25rem;">

@@ -10,12 +10,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/bootstrap-icons.svg" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+<style>
 	</script>
 
 <body>
 	<!--  -->
 	<nav class="navbar navbar-light bg-light">
-		<span class="navbar-brand d-grid gap-3 mx-auto display-2 container-fluid"> Gestion du Promotion :
+		<span class="navbar-brand d-grid gap-3 mx-auto display-3 container-fluid"> Gestion du Promotion :
 		</span>
 
 	</nav>
@@ -52,7 +56,7 @@ include "BLL/PromotionBLL.php";
 		</table>
 		<br>
 		<div class="container-fluid">
-			<a href="add.php" class="btn btn-success">Ajouter</a>
+			<a href="add.php" class="btn btn-success bi bi-plus-circle-fill">Ajouter</a>
 			<a href="search.html" class="btn btn-secondary">Chercher</a>
 		</div>
 	</div>
